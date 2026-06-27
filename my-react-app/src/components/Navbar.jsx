@@ -1,50 +1,21 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+import React from 'react';
 
-  const toggleMenu = () => setIsOpen(!isOpen);
-  const closeMenu = () => setIsOpen(false);
-
-  const navLinks = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/skills', label: 'Skills' },
-    { path: '/technical-skills', label: 'Tech Skills' },
-    { path: '/education', label: 'Education' },
-    { path: '/experience', label: 'Experience' },
-    { path: '/projects', label: 'Projects' },
-    { path: '/contact', label: 'Contact' },
-  ];
-
+function Navbar() {
   return (
     <nav className="navbar">
-      <div className="navbar-container">
-        <NavLink to="/" className="navbar-logo" onClick={closeMenu}>
-         
-          <span>Dev<span className="cyan-text">Portfolio</span></span>
-        </NavLink>
-
-        <div className="menu-icon" onClick={toggleMenu}>
-         
-        </div>
-
-        <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
-          {navLinks.map((link) => (
-            <li key={link.path} className="nav-item">
-              <NavLink
-                to={link.path}
-                className={({ isActive }) => `nav-links ${isActive ? 'active-link' : ''}`}
-                onClick={closeMenu}
-              >
-                {link.label}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <div className="nav-logo">Portfolio</div>
+      <ul className="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+      
+        <li><a href="#education">Education</a></li>
+        <li><a href="#tech-skills">Tech Skills</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   );
-};
+}
 
 export default Navbar;

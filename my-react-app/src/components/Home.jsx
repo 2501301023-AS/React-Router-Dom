@@ -1,49 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-
-const Home = () => {
+function Home() {
   return (
-    <div className="home-container">
-      <div className="home-hero">
-        <div className="hero-text">
-          <p className="hero-greeting">Hi, my name is </p>
-          <h1 className="hero-name">ASHISH KUMAR</h1>
-          <h2 className="hero-subtitle">Full Stack Developer</h2>
-          <p className="hero-description">
-            I build high-performance, responsive web applications with modern design principles. 
-            Turning complex problems into clean, functional code is my specialty.
-          </p>
-          
-          <div className="hero-cta">
-            <Link to="/projects" className="btn btn-primary">
-              View My Work 
-            </Link>
-            <Link to="/contact" className="btn btn-secondary">
-              Contact Me
-            </Link>
-          </div>
-
-          <div className="hero-socials">
-            <a href="https://github.com/2501301023-AS" target="_blank" rel="noreferrer" className="social-icon"><Github /></a>
-            <a href="https://www.linkedin.com/in/ashishkumar2008/" target="_blank" rel="noreferrer" className="social-icon"><Linkedin /></a>
-            <a href="mailto:ASHISHKUMAR21@GMAIL.com" className="social-icon"></a>
-          </div>
-        </div>
-
-        <div className="hero-image-container">
-          <div className="image-border-glow">
-           
-            <img 
-              src="1(1).jpg" 
-              alt="Profile" 
-              className="hero-image"
-            />
-          </div>
-        </div>
+    <div className="home-content">
+      <div className="home-text">
+        <h1>Hi, I'm <span className="highlight">ASHISH KUMAR</span></h1>
+        <p>Welcome to my professional portfolio website.</p>
+        <a href="#contact" className="btn">Work With Me</a>
+      </div>
+      <div className="home-image-container">
+    
+        <img 
+          src="1.jpg" 
+          alt="Profile" 
+          className="round-image" 
+        />
       </div>
     </div>
   );
-};
+}
 
 export default Home;

@@ -1,31 +1,31 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Technicalskill from "./components/Technicalskill";
-import Footer from "./components/Footer";
-import Experience from "./components/Experience";
-import Education from "./components/Education";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import React from 'react';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
 
-export default function App() {
+import Education from './components/Education';
+import TechnicalSkills from './components/Technicalskill'
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import './App.css'; 
+
+function App() {
   return (
-    <BrowserRouter>
+    <div className="app-container">
       <Navbar />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/Footer" element={<Footer />} />
-        <Route path="/technical" element={<Technicalskill/>}/>
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+      <main>
+        <section id="home"><Home /></section>
+        <section id="about"><About /></section>
+       
+        <section id="education"><Education /></section>
+        <section id="tech-skills"><TechnicalSkills /></section>
+     <section id="skills"><Skills /></section>
+     <section id="projects"><Projects /></section>
+        <section id="contact"><Contact /></section>
+      </main>
+    </div>
   );
 }
+
+export default App;
