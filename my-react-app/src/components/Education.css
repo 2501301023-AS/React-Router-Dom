@@ -10,12 +10,12 @@
 }
 
 .education-container {
-  max-w: 950px;
+  max-width: 950px;
   margin: 0 auto;
   width: 100%;
 }
 
-/* Heading Design */
+
 .title-wrapper {
   text-align: center;
   margin-bottom: 50px;
@@ -27,7 +27,7 @@
   letter-spacing: 1px;
   margin-bottom: 10px;
   background: linear-gradient(45deg, #58a6ff, #bc8cff);
-  -webkit-background-clip: text;
+  
   -webkit-text-fill-color: transparent;
 }
 
@@ -39,7 +39,7 @@
   border-radius: 2px;
 }
 
-/* Beautiful Master Glass Box Layout */
+
 .edu-main-card {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -63,7 +63,7 @@
   }
 }
 
-/* Left Column: Image/Badge Container */
+
 .edu-image-side {
   background: rgba(255, 255, 255, 0.01);
   border-right: 1px solid rgba(255, 255, 255, 0.04);
@@ -111,7 +111,6 @@
   letter-spacing: 0.5px;
 }
 
-/* Right Column: Text & Content Space */
 .edu-details-side {
   padding: 40px;
   display: flex;
@@ -153,7 +152,7 @@
   margin-bottom: 25px;
 }
 
-/* Beautiful Nested Focus Tags */
+
 .focus-areas h5 {
   font-size: 0.9rem;
   text-transform: uppercase;

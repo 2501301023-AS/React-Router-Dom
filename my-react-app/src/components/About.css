@@ -1,4 +1,4 @@
-/* Core Section Setup */
+
 .about-section {
   background: radial-gradient(circle at 50% 50%, #1a1f38 0%, #0d1117 100%);
   color: #f0f6fc;
@@ -10,12 +10,12 @@
 }
 
 .about-container {
-  max-w: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
   width: 100%;
 }
 
-/* Heading Design */
+
 .title-wrapper {
   text-align: center;
   margin-bottom: 60px;
@@ -27,8 +27,7 @@
   letter-spacing: 1px;
   margin-bottom: 10px;
   background: linear-gradient(45deg, #58a6ff, #bc8cff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+ 
 }
 
 .title-underline {
@@ -39,7 +38,7 @@
   border-radius: 2px;
 }
 
-/* Layout Grid */
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -52,7 +51,7 @@
   }
 }
 
-/* Left Column: Beautiful Profile Card */
+
 .profile-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -94,7 +93,7 @@
   pointer-events: none;
 }
 
-/* Hover effects for the image */
+
 .profile-card:hover .profile-image {
   transform: scale(1.08);
 }
@@ -112,7 +111,7 @@
   font-weight: 500;
 }
 
-/* Right Column: Modern Information Boxes */
+
 .info-container {
   display: flex;
   flex-direction: column;
@@ -156,7 +155,6 @@
   font-weight: 600;
 }
 
-/* Skills Box Layout */
 .skills-grid {
   list-style: none;
   padding: 0;
