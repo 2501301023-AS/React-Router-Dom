@@ -30,7 +30,7 @@ const About = () => {
               />
               <div className="image-overlay"></div>
             </div>
-            <h3 className="profile-name">Your Name</h3>
+            <h3 className="profile-name">ASHISH KUMAR</h3>
             <p className="profile-subtitle">Web Developer & Student</p>
           </div>
 
